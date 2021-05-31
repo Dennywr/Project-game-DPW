@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@300&family=Girassol&display=swap" rel="stylesheet">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="style/guess-number.css">
+  </head>
+  <body>
+
+    <!-- Guess Number -->
+    <div class="container">
+      <div class="card">
+        <div class="game-title text-light">Guess-Number Game</div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Nama</span>
+          </div>
+          <input type="text" class="form-control" id="nama" placeholder="Nama Anda" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Tebak</span>
+          </div>
+          <input type="text" class="form-control" id="angka" placeholder="Angka Tebakan Anda" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div align="center">
+          <button type="button" class="btn btn-light" id="check" onclick="check()">Check</button>
+          <a class="btn btn-danger reset" onclick="reset()">Reset</a>
+        </div>
+        <div class="temp">
+          <div class="underline">
+            <div class="answer text-light">*  -  *  -  *</div>
+            <hr class="text-light">
+          </div>
+        </div>
+        <div class="text-start">
+          <textarea readonly class="form-control" id="result" rows="4"></textarea>
+          <hr />
+        </div>
+    </div>
+    <!-- Akhir Guess Number -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <!-- Akhir GSAP -->
+    <script src="script/guess-number.js"></script>
+  </body>
+</html>
