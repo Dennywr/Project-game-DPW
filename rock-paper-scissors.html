@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style/rock-paper-scissors.css">
+</head>
+<body onload="newGame()">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">RESULT</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body"></div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="text-center top-info">
+                <h1 class="fw-bold game-title text-light">Rock Paper Scissors</h1>
+                <ul>
+                <li class="fs-4 text-light">You : <span class="fw-bold fs-4 text-danger" id="score-a"></span></li>
+                <li class="fs-4 text-light">Computer : <span class="fw-bold fs-4 text-danger" id="score-b"></span></li>
+                </ul>
+                <a class="btn btn-light p-2 w-25 mb-3" id="check" onclick="newGame()">New Game</a>
+                <a class="btn btn-light p-2 w-25 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="finish()">Finish</a>
+            </div>
+            <div class="p-3 text-center game-container">
+                <div id="rock" class="" onclick="pickOption(1)">
+                    <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-rock-o-512.png">
+                    <span class="fw-bold">Rock</span>
+                </div>
+                <div id="paper" class="" onclick="pickOption(2)">
+                    <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-stop-o-512.png">
+                    <span class="fw-bold">Paper</span>
+                </div>
+                <div id="scissors" class="" onclick="pickOption(3)">
+                    <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-scissors-o-512.png">
+                    <span class="fw-bold">Scissors</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<!-- Akhir GSAP -->
+<script src="script/rock-paper-scissors.js"></script>
+</body>
+</html>
