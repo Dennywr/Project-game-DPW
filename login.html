@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+	<div class="card">
+		<div class="login-box">
+			<h1>Login</h1>
+			<form action="regulation.html" method="GET">
+				<div class="textbox">
+					<img src="https://freepngimg.com/thumb/youtube/62644-profile-account-google-icons-computer-user-iconfinder-thumb.png">
+					<input type="email" name="Username" placeholder="Username" required="">
+				</div>
+				<div class="textbox">
+					<img src="https://freepngimg.com/thumb/padlock/11-2-padlock-transparent-thumb.png">
+					<input type="password" name="Password" placeholder="Password" required="">
+				</div>
+				<input class="button" type="submit" value="Sign In">
+			</div>
+		</div>
+	</div>
+	<!-- GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<script>
+			gsap.from(".card", {duration: 1, x: 0, opacity: 0, scale: 0.6});
+	</script>
+	<!-- Akhir GSAP -->
+</body>
+</html>
+
+
+
+
+
