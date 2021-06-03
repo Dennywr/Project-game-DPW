@@ -46,13 +46,6 @@ const check = () => {
   }
 }
 
-const reset = () => {
-  let choise = confirm("Reset?");
-  let reset = document.querySelector('.reset');
-  if(choise) {
-    reset.setAttribute("href", "guessNumber.html");
-  }
-}
 
 // GSAP
 gsap.from(".card", {duration: 2, y: '-100%', opacity: 0, ease: 'power3.out'});

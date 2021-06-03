@@ -51,5 +51,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <!-- Akhir GSAP -->
     <script src="script/guess-number.js"></script>
+    <script>
+      const reset = () => {
+        let choise = confirm("Reset?");
+        let reset = document.querySelector('.reset');
+        if(choise) {
+          reset.setAttribute("href", "guess-number.html");
+        }
+      }
+    </script>
   </body>
 </html>
